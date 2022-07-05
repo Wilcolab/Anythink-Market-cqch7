@@ -10,4 +10,11 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+When first setting up your environment, we need to ensure that we have the following components installed:
+- [Docker](https://docs.docker.com/get-docker/)
+
+My suggestion is to also install Microsoft's VSCode, which will make development much easier. This can be acquired [here](https://code.visualstudio.com/download).
+
+Upon installing Docker for the first time, especially on Windows, you will need to either logout or reboot to complete the installation. Please do so, and then continue this setup. To verify Docker is installed and running, please run these commands
+`docker -v` and `docker-compose -v`. Once you have verified that both of these commands work and return code, you may start the container. In order to do so:
+- In a terminal, run `docker-compose up` **from the project root directory**
